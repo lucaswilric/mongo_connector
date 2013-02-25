@@ -27,5 +27,7 @@ class MongoHqConnector
       @@database = Mongo::Connection.new.db(default_collection)
     end
   end
+
+  VERSION = '0.0.1'
 end
 

@@ -11,7 +11,13 @@ The MongoHQ Connector grabs the `MONGOHQ_URL` environment variable and connects 
 Gemfile:
 
 ```ruby
-gem 'mongo_hq_connector', git: 'https://github.com/lucaswilric/mongo_hq_connector.git'
+gem 'mongo_hq_connector'
+```
+
+Shell:
+
+```shell
+gem install mongo_hq_connector
 ```
 
 Code:

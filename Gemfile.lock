@@ -14,6 +14,7 @@ GEM
     diff-lcs (1.2.1)
     mongo (1.8.2)
       bson (~> 1.8.2)
+    rake (10.0.3)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -28,4 +29,5 @@ PLATFORMS
 
 DEPENDENCIES
   mongo_connector!
+  rake
   rspec

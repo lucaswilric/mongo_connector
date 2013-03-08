@@ -1,4 +1,5 @@
 source :rubygems
 gemspec
-gem 'rspec'
 
+gem 'rspec'
+gem 'rake'

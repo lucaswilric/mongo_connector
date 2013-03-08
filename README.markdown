@@ -1,31 +1,31 @@
 
-MongoHQ Connector
-=================
+Mongo Connector
+===============
 
-A simple gem for connecting to MongoHQ databases.
+A simple gem for connecting to Mongo databases.
 
-The MongoHQ Connector grabs the `MONGOHQ_URL` environment variable and connects to the database it describes. If the variable isn't populated, MHQC will try to connect to a database you name on a local Mongo instance.
+The Mongo Connector takes the URI you give it and connects to the database the URI describes. If the URI is blank, MHQC will try to connect to a database you name on a local Mongo instance.
 
 ### Usage
 
 Gemfile:
 
 ```ruby
-gem 'mongo_hq_connector'
+gem 'mongo_connector'
 ```
 
 Shell:
 
 ```shell
-gem install mongo_hq_connector
+gem install mongo_connector
 ```
 
 Code:
 
 ```ruby
-require 'mongo_hq_connector'
+require 'mongo_connector'
 
-db = MongoHqConnector.connection('my_database')
+db = MongoConnector.new(ENV['MONGOHQ_URL'], 'my_database').connection
 
 collection = db['my_collection']
 ```
